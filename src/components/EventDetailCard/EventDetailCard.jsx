@@ -1,5 +1,9 @@
 import React from 'react'
-import { CalendarToday, LocationOn, QueryBuilder } from '@material-ui/icons'
+import {
+  MdCalendarToday,
+  MdLocationOn,
+  MdQueryBuilder,
+} from 'react-icons/md'
 import styles from './styles.module.css'
 
 const EventDetailCard = ({
@@ -13,15 +17,15 @@ const EventDetailCard = ({
     <div className={styles.container}>
       <p className={styles.eventName}>{eventName}</p>
       <div className={styles.detailContainer}>
-        <CalendarToday />
+        <MdCalendarToday />
         <span className={styles.detailText}>{eventDate}</span>
       </div>
       <div className={styles.detailContainer}>
-        <QueryBuilder />
+        <MdQueryBuilder />
         <span className={styles.detailText}>{eventTime}</span>
       </div>
       <div className={styles.detailContainer}>
-        <LocationOn />
+        <MdLocationOn />
         <span className={styles.detailText}>{eventVenue}</span>
       </div>
       <p className={styles.addressText}>{venueAddress}</p>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
-import { VolumeUp, VolumeOff } from '@material-ui/icons'
+import { MdVolumeUp, MdVolumeOff } from 'react-icons/md'
 
 import audioSrc from '../../assets/backsound-invitation.mp3'
 import styles from './styles.module.css'
@@ -29,9 +29,9 @@ const PlaySong = ({ isInvitationOpen }) => {
       onClick={() => setIsPlaying(!isPlaying)}
     >
       {isPlaying ? (
-        <VolumeUp style={{ fontSize: 20 }} />
+        <MdVolumeUp style={{ fontSize: 20 }} />
       ) : (
-        <VolumeOff style={{ fontSize: 20 }} />
+        <MdVolumeOff style={{ fontSize: 20 }} />
       )}
     </button>
   )

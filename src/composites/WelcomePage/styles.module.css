@@ -4,9 +4,10 @@
   align-items: center;
   justify-content: center;
 
-  height: 100vh;
+  min-height: 100vh;
+  min-height: 100dvh;
   background: linear-gradient(rgba(91, 61, 44, 0.92), rgba(91, 61, 44, 0.92)),
-    url('../../assets/header_img.jpeg');
+    url('../../assets/header_img1.jpg');
   background-repeat: no-repeat;
   /* Background image is centered vertically and horizontally at all times */
   background-position: center center;
@@ -59,7 +60,7 @@
   .container {
     background: linear-gradient(rgba(91, 61, 44, 0.92), rgba(91, 61, 44, 0.92)),
       url('../../assets/header_img_mobile.png');
-    background-size: 100vw 650px;
+    background-size: cover;
     background-repeat: no-repeat;
   }
 
